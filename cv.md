@@ -69,4 +69,5 @@ function solution(number) {
 
 * Russian - native
 * English - C1
+* German - A2
 
