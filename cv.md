@@ -62,7 +62,7 @@ function solution(number) {
 
 ## Education
 ### European Humanities University
-**2024-current time** 
+**2023-current time** 
 * Computer Science
 
 ## Languages
