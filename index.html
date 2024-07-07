@@ -1,11 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CV</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="assets/favicon.ico">
+    </head>
+    <body>
+        <div class="container-body">
+            <header class = "header">
+                <div class="container">
+                    <nav class="nav">
+                        <ul class="nav-list">
+                            <li><a href="#about-me" class="nav-link">About Me</a></li>
+                            <li><a href="#contacts" class="nav-link">Contacts</a></li>
+                            <li><a href="#education" class="nav-link">Education</a></li>
+                            <li><a href="#skills" class="nav-link">Skills</a></li>
+                            <li><a href="#code" class="nav-link">Code</a></li>
+                            <li><a href="#languages" class="nav-link">Languages</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <main class="main">
+                <div class="container">
+                    <section class="section section-profile" id="profile">
+                        <img src="assets/photo.jpg" alt="avatar">
+                        <div class="section-profile-title">
+                            <h1 class="section-title main-title">Anna Kudriashova</h1>
+                            <h3 class="section-subtitle">Software Engineer</h3>
+                        </div>
+                    </section>
+                    <section class="section" id="about-me">
+                        <h2>About Me</h2>
+                        <p>Certified Salesforce Developer with 3+ years of experience developing custom solutions with a wide range of technologies in Sales Cloud and Service Cloud.</p>
+                    </section>
+                    <section class="section" id="contacts">
+                        <h2>Contacts</h2>
+                        <ul>
+                            <li class="contact-item">
+                                <img src="./assets/icons/email.svg" alt="email" width="30" height="30">
+                                <p><strong>Email:</strong> ki.annakudriashova@gmail.com</p>
+                            </li>
+                            <li class="contact-item">
+                                <img src="./assets/icons/phone.svg" alt="phone" width="30" height="30">
+                                <p><strong>Phone:</strong> (+370) 660-44554</p>
+                            </li>
+                            <li class="contact-item">
+                                <img src="./assets/icons/location-point.svg" alt="location" width="30" height="30">
+                                <p><strong>Location:</strong> Vilnius, Lithuania</p>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="section" id="education">
+                        <h2>Education</h2>
+                        <p><strong>European Humanities University</strong>, Computer Science, 2023-current time</p>
+                    </section>
+                    <section class="section" id="skills">
+                        <h2>Skills</h2>
+                        <ul>
+                            <li>Administration and configuration: Data Model, Validation rules, Process Builder, Flows</li>
+                            <li>Security model</li>
+                            <li>Apex triggers and Unit tests</li>
+                            <li>Asynchronous Apex</li>
+                            <li>Salesforce UI: Visualforce, Aura, LWC</li>
+                            <li>Data migration using Data Loader</li>
+                            <li>Ant migration tool, Salesforce CLI</li>
+                            <li>HTML, CSS, JS</li>
+                            <li>Salesforce REST integration</li>
+                            <li>Conga Composer</li>
+                        </ul>
+                    </section>
+                    <section class="section" id="code">
+                        <h2>Code Example</h2>
+                        <p><b>KATA from CODEWARS:</b>
+                            <span>
+                                If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Finish the solution so that it returns the sum of all the multiples of 3 or 5 below the number passed in. Additionally, if the number is negative, return 0. Note: If the number is a multiple of both 3 and 5, only count it once.
+                            </span>
+                        </p>
+                         <pre class="pre">
+                            <code>
+        function solution(number) {
+            if (number &lt;= 0) return 0;
+            let array = [];
+            let sum = 0;
+            for (let i = 1; i &lt; number; i++) {
+                if (i % 3 == 0 && i % 5 == 0) {
+                    array.push(i);
+                } else if (i % 3 == 0 || i % 5 == 0) {
+                    array.push(i);
+                }
+            }
+            for (let i = 0; i &lt; array.length; i++) {
+                sum += array[i];
+            }
+            return sum;
+        }
+                            </code>
+                        </pre>
+                    </section>
+                    <section class="section" id="languages">
+                        <h2>Languages</h2>
+                        <ul>
+                            <li>Russian - native</li>
+                            <li>English - C1</li>
+                            <li>German - A2+</li>
+                        </ul>
+                    </section>
+                </div>
+            </main>
+            <footer class="footer">
+                <p>&copy; 2024 Anna Kudriashova</p>
+                <a href="https://www.salesforce.com/trailblazer/akudriashova" class="trailhead" target=”_blank” >
+                    <img src="./assets/icons/trailhead.svg" alt="trailhead" class="trailhead-icon" width="54" height="54">
+                </a>
+                <a href="https://www.linkedin.com/in/anna-kudriashova/" class="linkedin" target=”_blank” >
+                    <img src="./assets/icons/linkedin.svg" alt="linkedin" class="linkedin-icon" width="35" height="35">
+                </a>
+                <a href="https://github.com/AnnaKudryashova" class="github" target=”_blank” >
+                    <img src="./assets/icons/github.svg" alt="github" class="github-icon" width="35" height="35">
+                </a>
+                <a href="https://rs.school/courses/javascript-ru" class="rss" target=”_blank” >
+                    <img src="./assets/icons/rss.svg" alt="rss" class="rss-icon" width="72" height="72">
+                </a>
+            </footer>
+        </div>
+    </body>
 </html>
